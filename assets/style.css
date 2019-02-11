@@ -1,0 +1,65 @@
+#gameDiv {
+    display: none;
+}
+
+
+#initialNameDisplay{
+    text-align: center;
+    margin-top: 100px;
+   
+    height: auto;
+
+}
+
+
+body{
+    background-color: #3668ff;
+    color: #ffffff;
+    height: auto;
+}
+
+
+#game {
+    margin: 100px auto;
+}
+
+#welcomeMessage {
+    margin-left: 170px;
+}
+
+#request{
+    margin-left: 140px;
+}
+
+#entireChat{
+    position: relative;
+    width: 125%;
+    top: -430px;
+    right: -1050px;
+    padding:0;
+    margin:0;
+    
+
+}
+#chatLines{
+    margin-bottom: 2;
+    padding: 0;
+    line-height: 5px;
+    
+}
+
+#chatBox{
+    height:500px;
+    background-color: #ffffff;
+    color: black;
+    width: 100%;
+    width: 124px;
+    overflow: scroll;
+}
+
+#chatMessage{
+    position: relative;
+    right: 15px;
+    width: 124%;
+}
+

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+  <body>
+    <div id="container">
+
+        <div class="row" id="initialNameDisplay">
+            <div class="col-12">
+                <h1>Rock Paper Scissors</h1>
+                <br>
+                <br>
+                <br>
+                <form>
+                    <input id="nameInput" type="text" placeholder="Type Your Name" required/>
+                    <br>
+                    <br>
+                    
+                  <button type="submit" id="nameAdd">Login</button>
+                </form> 
+            </div>
+        </div>
+      <div class="row" id="gameDiv">
+        <!--All the game goes here-->
+        <div class="col-10" id="game">
+          <!--All game details except result goes here-->
+          <div class="row" id="mainGameDiv">
+              <!--Player1 Info-->
+              <div class="col-12">
+                <h3 id="welcomeMessage"></h3>
+                <p id="request">Please select rock, paper or scissors. I will notify you when the other player is here.</p>
+                <br>
+                <br>
+            </div>
+              
+            <div class="col-5">
+              <p id="player1Name" id="player1">Waiting for the player to join</p>
+              <p id="player1Selection" id="player1Selection">Select One</p>
+              
+              
+            </div>
+            <!--Rock paper Scissor-->
+            <div class="col-2">
+              <h4 id="rock" class="option" data-name="r">ROCK</h1>
+              <h4 id="paper" class="option" data-name="p">PAPER</h1>
+              <h4 id="scissor" class="option" data-name="s">SCISSORS</h1>
+            </div>
+            <!--Player2 Info-->
+            <div class="col-5">
+              <p id="player2Name" id="player2name">Waiting for the player to join</p>
+              <p id="player2Selection" id="player2Selection">Select One</p>
+             
+            </div>
+          </div>
+          <!--Result Div Will be here-->
+          <div class="row">
+            <div class="row" id="result"></div>
+          </div>
+          
+        </div>
+        <!--All the chat goes here-->
+        <div class="col-2">
+                <div class="row" id="entireChat">
+                        <div class="col-8" id="chatBox">
+                          ch@tMe
+                          <div id="chat"></div>
+                        </div>
+                
+                        <div class="col-8">
+                            <form>
+                          <input type="text"  onfocus="this.value=''" id="chatMessage" />
+                          <button type="submit" id="sendMessage">Send</button>
+                        </form>
+                        </div>
+                      </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
